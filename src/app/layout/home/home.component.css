@@ -1,0 +1,7 @@
+.example-card {
+    min-width: 200px;
+    max-width: 90%;
+    cursor: grab;
+    margin: 10px auto;
+    text-align: center;
+}

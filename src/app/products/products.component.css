@@ -1,0 +1,21 @@
+.card-container {
+    padding: 16px; 
+}
+.example-card {
+    min-width: 200px;
+    max-width: 400px;
+    margin: 5px auto;
+    
+}
+
+img {
+    height: 230px;
+}
+.description {
+    height: 70px;
+    overflow-y: scroll;
+    font-size: 13px;
+}
+.number {
+    text-decoration: none;
+}

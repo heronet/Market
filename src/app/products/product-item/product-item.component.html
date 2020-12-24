@@ -1,0 +1,19 @@
+<mat-card  class="example-card mat-elevation-z4"  >
+    <div>
+      <mat-card-title>{{product.Name}} </mat-card-title>
+      <mat-card-subtitle style="color: rgb(74, 170, 74);">BDT {{product.Price}} TK </mat-card-subtitle>
+    </div>
+    <img mat-card-image [src]="product.imageSource" [alt]="product.Name" style="max-height: 90%; min-height: 200px;">
+    <mat-card-content>
+      <p>
+          {{product.Description}}
+      </p>
+      <p style="font-weight: 600;">Phone: <a class="number" href="tel:{{product.Phone}}">{{product.Phone}}</a> </p>
+      <p style="font-weight: 600;">Text: <a class="number" href="sms:{{product.Phone}}">{{product.Phone}}</a> </p>
+      <p style="font-weight: 600;">E-Mail: <a class="number" href="mailto:{{product.Email}}">{{product.Email}}</a> </p>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <a mat-raised-button color="primary" style="width: 100%;" routerLink="/products">Browse Other Products</a>
+    </mat-card-actions>
+</mat-card>

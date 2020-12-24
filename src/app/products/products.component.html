@@ -1,0 +1,20 @@
+<div class="card-container" fxLayout="row wrap"  fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let product of products">
+      <mat-card  class="example-card mat-elevation-z4" >
+        <mat-card-header>
+          <mat-card-title>{{product.Name}} </mat-card-title>
+          <mat-card-subtitle style="color: rgb(74, 170, 74);">{{product.Price}} TK</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image [src]="product.imageSource" [alt]="product.Name" style="max-height: 300px; min-height: 200px;">
+        <mat-card-content>
+          <p class="description">{{product.Description}} </p>
+          <p style="font-weight: 600;">Seller: {{product.Seller}} </p>
+          <p style="font-weight: 600;">Phone: <a class="number" href="tel:{{product.Phone}}">{{product.Phone}}</a> </p>
+          <p style="font-weight: 600;">Text: <a class="number" href="sms:{{product.Phone}}">{{product.Phone}}</a> </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <a mat-raised-button color="primary" [routerLink]="['/product', product.Id]" style="width: 100%;">Buy</a>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+</div>
