@@ -13,7 +13,7 @@ export class AppComponent {
     this.dialog.open(DialogContactComponent, {
       data: {
         location: "Par-Naogaon, Naogaon.",
-        phone: "01853043768",
+        phone: "01850000000",
         provider: "Siratul Islam",
         email: "randomunworthy@gmail.com"
       }
